@@ -1,0 +1,1 @@
+Pass in user email and password through the command line argument where email is arg[0] and password arg[1]
