@@ -7,6 +7,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.List;
 
+/**
+ * @author ercross
+ *
+ * App provides an entry point into the program.
+ */
 public class App
 {
     public static void main( String[] args )
