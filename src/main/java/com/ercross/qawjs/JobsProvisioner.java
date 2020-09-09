@@ -3,6 +3,8 @@ package com.ercross.qawjs;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -19,7 +21,7 @@ import java.util.stream.Collectors;
  */
 public class JobsProvisioner {
 
-    private final WebDriver driver;
+    final WebDriver driver;
     private final List<Job> sortedJobs = new ArrayList<>();
 
     public JobsProvisioner(WebDriver driver) {
@@ -42,7 +44,6 @@ public class JobsProvisioner {
 
     private static String scrapePageOnJobAvailability(WebDriver driver) {
         String scrapedTable = driver.findElement(By.xpath(tableXpath)).getText();
-        System.out.println(scrapedTable);
         return scrapedTable;
     }
 
@@ -57,13 +58,14 @@ public class JobsProvisioner {
     }
 
     private static final String callUrlPrefix = "https://app.qa-world.com/transcriptions/";
+    final Logger log = LogManager.getLogger(JobsProvisioner.class);
 
     private void setCallDataFields(Matcher matcher) {
         Job jobData;
         while (matcher.find()) {
-            jobData = new Job( Double.parseDouble(matcher.group(1).trim()), Float.parseFloat(matcher.group(2).trim()), callUrlPrefix + matcher.group(1));
+            jobData = new Job( Long.parseLong(matcher.group(1).trim()), Float.parseFloat(matcher.group(2).trim()), callUrlPrefix + matcher.group(1));
+            log.info(jobData.toString() + "\n");
             sortedJobs.add(jobData);
-            System.out.println(jobData);
         }
     }
 

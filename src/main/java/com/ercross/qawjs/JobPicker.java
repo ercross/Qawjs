@@ -1,5 +1,7 @@
 package com.ercross.qawjs;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 
@@ -7,9 +9,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class JobPicker implements Runnable{
+public class JobPicker {
 
-    private final WebDriver driver;
+    final WebDriver driver;
     private final List<Job> sortedJobs;
 
     public JobPicker (WebDriver driver, List<Job> sortedJobs) {
@@ -17,19 +19,15 @@ public class JobPicker implements Runnable{
         this.driver = driver;
     }
 
-    /*
-     * pickAvailableJob opens each job-url in a new tab.
-     * Since No further interaction is needed with the opened tabs other than to close such tabs, the driver is closed after use.
-     * Therefore, driver instance monitoring the jobs page should not be passed into JobPicker constructor
-     */
-    private void pickAvailableJobs() {
+    private void pickJobs() {
         for ( int i=sortedJobs.size(); i != 0; i--) {
             driver.switchTo().newWindow(WindowType.TAB).get(sortedJobs.get(i-1).getCallUrl()); //opens each url in a new tab
+            //todo note down the @contains in my journal if it works
+            //driver.findElement(By.xpath("//tr[td[a[contains(@id,'" + sortedJobs.get(i-1).getCallId() +"')]]]")).sendKeys(Keys.CONTROL + "t");
         }
-        driver.close();
     }
 
-    private static final List<Double> visitedJobs = new ArrayList<>();
+    private static final List<Long> visitedJobs = new ArrayList<>();
 
     private static void addJobsToVisitedJobs (List<Job> sortedJobs) {
         sortedJobs.forEach(job -> {
@@ -57,10 +55,9 @@ public class JobPicker implements Runnable{
         }
     }
 
-    @Override
-    public void run() {
+    public void pickAvailableJobs() {
         removeVisitedJobs();
-        pickAvailableJobs();
+        pickJobs();
         addJobsToVisitedJobs(this.sortedJobs);
         if (visitedJobs.size() == 100) {
             cutVisitedJobs(80,99);
