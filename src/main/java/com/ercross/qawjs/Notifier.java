@@ -1,9 +1,6 @@
 package com.ercross.qawjs;
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -19,8 +16,16 @@ public class Notifier {
         String recipient = emailRecipient;
         String host = "localhost";
 
+
         Properties props = System.getProperties();
         props.setProperty("mail.smtp.host", host);
+        props.setProperty("mail.smtp.port", "25");
+
+        Authenticator auth = new Authenticator() {
+            public PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication("tobins4u@gmail.com", "246829912002");
+            }
+        };
 
         Session session = Session.getDefaultInstance(props);
 

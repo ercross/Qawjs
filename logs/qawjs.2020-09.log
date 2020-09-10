@@ -1714,4 +1714,1118 @@
  	 2020-09-09 15:54:10,996 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
 
  	 2020-09-09 15:54:26,646 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-09 22:34:48,362 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-09 22:34:48,416 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-09 22:34:51,383 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-09 22:34:51,405 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-09 22:34:51,406 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-09 22:34:51,424 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1e0b4072
+ 	 2020-09-09 22:34:51,485 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-09 22:34:51,487 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-09 22:34:51,491 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-09 22:34:51,495 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-09 22:34:51,497 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-09 22:34:51,500 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-09 22:34:51,504 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-09 22:34:51,505 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-09 22:34:51,506 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-09 22:34:51,507 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-09 22:34:51,509 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-09 22:34:51,510 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-09 22:34:51,514 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-09 22:34:51,515 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-09 22:34:51,521 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-09 22:34:51,523 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-09 22:34:51,558 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-09 22:34:51,747 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-09 22:34:51,747 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-09 22:34:51,778 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-09 22:34:51,778 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-09 22:34:51,791 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-09 22:34:51,804 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-09 22:34:51,804 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-09 22:34:51,931 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-09 22:34:51,932 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-09 22:34:51,932 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-09 22:34:51,932 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-09 22:34:51,933 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-09 22:34:51,933 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-09 22:34:51,933 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-09 22:34:51,934 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-09 22:34:51,934 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-09 22:34:51,934 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-09 22:34:51,938 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-09 22:34:51,939 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-09 22:34:51,939 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-09 22:34:51,955 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-09 22:34:51,956 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-09 22:34:51,958 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-09 22:34:54,576 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 14359 (auto-detected)
+ 	 2020-09-09 22:34:54,580 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-09 22:34:54,580 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-09 22:34:54,598 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-09 22:34:54,600 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-09 22:34:54,602 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-09 22:34:54,773 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-09 22:34:54,776 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-09 22:34:54,776 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@45c46516
+ 	 2020-09-09 22:34:54,858 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-09 22:34:54,859 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-09 22:34:54,859 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-09 22:34:54,859 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-09 22:34:57,731 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0xf29867eae1ee6ea8
+ 	 2020-09-09 22:34:57,753 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-09 22:36:49,441 	 ERROR 	 App [main] 	 Application crashedorg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.rN06lk}, goog:chromeOptions: {debuggerAddress: localhost:35867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5c9265b57f2737cd3e3072619306ad3d
+ 	 2020-09-09 22:36:49,442 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-09 22:36:49,443 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-09 22:36:50,415 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-09 22:37:13,936 	 ERROR 	 App [main] 	 Application crashedorg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.9Md6Al}, goog:chromeOptions: {debuggerAddress: localhost:34913}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f687d9393d5772c7675c6a4123d75cf9
+ 	 2020-09-09 22:37:13,937 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-09 22:37:13,937 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-09 22:37:14,822 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-09 22:38:49,077 	 ERROR 	 App [main] 	 Application crashedorg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.JIZYpR}, goog:chromeOptions: {debuggerAddress: localhost:33451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1513de6e07216c365f8008289a47280
+ 	 2020-09-09 22:38:49,080 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-09 22:38:49,081 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-09 22:38:49,787 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 11:55:27,252 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 11:55:27,296 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 11:55:29,026 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 11:55:29,033 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 11:55:29,034 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 11:55:29,041 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 11:55:29,062 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 11:55:29,063 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 11:55:29,065 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 11:55:29,066 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 11:55:29,067 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 11:55:29,068 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 11:55:29,069 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 11:55:29,070 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 11:55:29,070 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 11:55:29,070 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 11:55:29,071 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 11:55:29,071 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 11:55:29,072 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 11:55:29,073 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 11:55:29,075 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 11:55:29,075 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 11:55:29,085 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 11:55:29,232 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 11:55:29,233 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 11:55:29,311 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 11:55:29,312 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 11:55:29,341 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 11:55:29,371 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 11:55:29,372 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 11:55:29,545 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 11:55:29,546 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 11:55:29,546 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 11:55:29,546 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 11:55:29,546 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 11:55:29,547 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 11:55:29,547 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 11:55:29,547 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 11:55:29,548 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 11:55:29,548 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 11:55:29,548 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 11:55:29,550 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 11:55:29,550 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 11:55:29,560 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 11:55:29,561 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 11:55:29,561 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 11:55:31,124 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 2845 (auto-detected)
+ 	 2020-09-10 11:55:31,131 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 11:55:31,132 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 11:55:31,133 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 11:55:31,134 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 11:55:31,135 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 11:55:31,196 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 11:55:31,197 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 11:55:31,198 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@15a98b40
+ 	 2020-09-10 11:55:31,226 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 11:55:31,226 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 11:55:31,226 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 11:55:31,227 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 11:55:41,419 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0x73012dc7911ad49d
+ 	 2020-09-10 11:55:41,449 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 11:55:58,888 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 11:56:04,491 	 INFO 	 JobsProvisioner [main] 	 CallId: 1966143036  Duration: 14.2 minutes
+
+ 	 2020-09-10 11:56:04,492 	 INFO 	 JobsProvisioner [main] 	 CallId: 6489336303  Duration: 18.5 minutes
+
+ 	 2020-09-10 11:56:04,493 	 INFO 	 JobsProvisioner [main] 	 CallId: 396756394  Duration: 3.6 minutes
+
+ 	 2020-09-10 11:56:04,494 	 INFO 	 JobsProvisioner [main] 	 CallId: 2966241036  Duration: 3.8 minutes
+
+ 	 2020-09-10 11:56:04,497 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 11:56:04,562 	 ERROR 	 App [main] 	 Application crashedorg.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[contains(@id, '-2966241036')]]] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[contains(@id, '-2966241036')]]]' is not a valid XPath expression.
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.iVxWho}, goog:chromeOptions: {debuggerAddress: localhost:44643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6218035089e7f1770653394db374d793
+*** Element info: {Using=xpath, value=//*[contains(@id, '-2966241036')]]]}
+ 	 2020-09-10 11:56:04,563 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 11:56:04,563 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 11:56:05,368 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 11:56:17,292 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:00:17,378 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:00:17,393 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:00:18,116 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:00:18,124 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:00:18,125 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:00:18,130 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 12:00:18,152 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:00:18,152 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:00:18,154 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:00:18,156 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:00:18,156 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:00:18,157 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:00:18,159 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:00:18,159 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:00:18,159 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:00:18,160 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:00:18,160 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:00:18,161 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:00:18,162 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:00:18,162 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:00:18,164 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:00:18,164 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:00:18,176 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:00:18,221 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:00:18,222 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:00:18,248 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:00:18,249 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:00:18,255 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:00:18,270 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:00:18,270 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:00:18,386 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:00:18,386 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:00:18,386 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:00:18,386 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:00:18,387 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:00:18,387 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:00:18,387 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:00:18,387 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:00:18,387 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:00:18,388 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:00:18,388 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:00:18,388 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:00:18,388 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:00:18,400 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:00:18,400 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:00:18,400 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:00:18,885 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 3711 (auto-detected)
+ 	 2020-09-10 12:00:18,888 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:00:18,889 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:00:18,890 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:00:18,892 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:00:18,893 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:00:18,963 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:00:18,964 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:00:18,964 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@56046652
+ 	 2020-09-10 12:00:18,997 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:00:18,998 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:00:18,998 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:00:18,999 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:00:19,735 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0x40bbc9e48958d524
+ 	 2020-09-10 12:00:19,752 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:00:31,598 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:01:09,623 	 INFO 	 JobsProvisioner [main] 	 CallId: 7946363903  Duration: 13.4 minutes
+
+ 	 2020-09-10 12:01:09,623 	 INFO 	 JobsProvisioner [main] 	 CallId: 3936635094  Duration: 9.2 minutes
+
+ 	 2020-09-10 12:01:09,624 	 INFO 	 JobsProvisioner [main] 	 CallId: 8346901136  Duration: 9.7 minutes
+
+ 	 2020-09-10 12:01:09,624 	 INFO 	 JobsProvisioner [main] 	 CallId: 6903834996  Duration: 7.5 minutes
+
+ 	 2020-09-10 12:01:09,624 	 INFO 	 JobsProvisioner [main] 	 CallId: 396576394  Duration: 5.5 minutes
+
+ 	 2020-09-10 12:01:09,624 	 INFO 	 JobsProvisioner [main] 	 CallId: 9366330346  Duration: 13.7 minutes
+
+ 	 2020-09-10 12:01:09,624 	 INFO 	 JobsProvisioner [main] 	 CallId: 3013994566  Duration: 9.7 minutes
+
+ 	 2020-09-10 12:01:09,625 	 INFO 	 JobsProvisioner [main] 	 CallId: 9266350345  Duration: 0.9 minutes
+
+ 	 2020-09-10 12:01:09,625 	 INFO 	 JobsProvisioner [main] 	 CallId: 3463963690  Duration: 14.7 minutes
+
+ 	 2020-09-10 12:01:09,625 	 INFO 	 JobsProvisioner [main] 	 CallId: 3893049663  Duration: 10.1 minutes
+
+ 	 2020-09-10 12:01:09,625 	 INFO 	 JobsProvisioner [main] 	 CallId: 3042633609  Duration: 6.8 minutes
+
+ 	 2020-09-10 12:01:09,625 	 INFO 	 JobsProvisioner [main] 	 CallId: 8946368303  Duration: 10.4 minutes
+
+ 	 2020-09-10 12:01:09,625 	 INFO 	 JobsProvisioner [main] 	 CallId: 6429736305  Duration: 7.0 minutes
+
+ 	 2020-09-10 12:01:09,626 	 INFO 	 JobsProvisioner [main] 	 CallId: 9014066313  Duration: 17.4 minutes
+
+ 	 2020-09-10 12:01:09,626 	 INFO 	 JobsProvisioner [main] 	 CallId: 9766330342  Duration: 10.9 minutes
+
+ 	 2020-09-10 12:01:09,626 	 INFO 	 JobsProvisioner [main] 	 CallId: 3366638094  Duration: 13.5 minutes
+
+ 	 2020-09-10 12:01:09,627 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:01:10,016 	 ERROR 	 App [main] 	 Application crashedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@id, '-8946368303')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.6A84zl}, goog:chromeOptions: {debuggerAddress: localhost:35157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0560288863b4225771817a30c0e62a9c
+*** Element info: {Using=xpath, value=//*[contains(@id, '-8946368303')]}
+ 	 2020-09-10 12:03:00,988 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:03:00,993 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:03:01,714 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:03:01,721 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:03:01,721 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:03:01,728 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 12:03:01,753 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:03:01,753 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:03:01,755 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:03:01,756 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:03:01,757 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:03:01,758 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:03:01,759 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:03:01,760 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:03:01,760 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:03:01,760 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:03:01,761 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:03:01,761 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:03:01,763 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:03:01,763 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:03:01,766 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:03:01,766 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:03:01,778 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:03:01,831 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:03:01,831 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:03:01,856 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:03:01,857 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:03:01,866 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:03:01,876 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:03:01,876 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:03:01,986 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:03:01,986 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:03:01,986 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:03:01,987 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:03:01,987 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:03:01,987 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:03:01,987 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:03:01,988 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:03:01,988 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:03:01,988 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:03:01,988 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:03:01,989 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:03:01,989 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:03:01,998 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:03:01,999 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:03:01,999 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:03:02,394 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 5064 (auto-detected)
+ 	 2020-09-10 12:03:02,397 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:03:02,397 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:03:02,398 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:03:02,399 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:03:02,400 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:03:02,466 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:03:02,466 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:03:02,467 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4d2365ae
+ 	 2020-09-10 12:03:02,491 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:03:02,491 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:03:02,491 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:03:02,492 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:03:03,395 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0x953f2bf92cedb5bf
+ 	 2020-09-10 12:03:03,434 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:03:18,652 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:03:18,855 	 INFO 	 JobsProvisioner [main] 	 CallId: 3496114036  Duration: 1.2 minutes
+
+ 	 2020-09-10 12:03:18,860 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:03:24,308 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:03:24,309 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:03:25,242 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:03:37,060 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:06:03,150 	 INFO 	 JobsProvisioner [main] 	 CallId: 486638094  Duration: 7.0 minutes
+
+ 	 2020-09-10 12:06:03,150 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:06:03,184 	 ERROR 	 App [main] 	 Application crashed. 
+Cause: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@id, '-486638094')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.Mdh0yZ}, goog:chromeOptions: {debuggerAddress: localhost:45271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 880da78f53ead49980fc18c071dab33d
+*** Element info: {Using=xpath, value=//a[contains(@id, '-486638094')]}
+ 	 2020-09-10 12:11:29,936 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:11:29,941 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:11:30,699 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:11:30,706 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:11:30,706 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:11:30,711 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 12:11:30,729 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:11:30,729 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:11:30,730 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:11:30,731 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:11:30,732 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:11:30,733 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:11:30,734 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:11:30,734 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:11:30,734 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:11:30,734 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:11:30,735 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:11:30,735 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:11:30,736 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:11:30,736 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:11:30,739 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:11:30,739 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:11:30,750 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:11:30,797 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:11:30,797 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:11:30,816 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:11:30,816 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:11:30,827 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:11:30,841 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:11:30,842 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:11:30,946 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:11:30,947 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:11:30,947 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:11:30,947 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:11:30,947 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:11:30,948 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:11:30,948 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:11:30,948 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:11:30,948 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:11:30,948 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:11:30,949 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:11:30,949 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:11:30,949 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:11:30,959 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:11:30,959 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:11:30,960 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:11:31,357 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 5666 (auto-detected)
+ 	 2020-09-10 12:11:31,360 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:11:31,360 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:11:31,362 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:11:31,362 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:11:31,364 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:11:31,424 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:11:31,425 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:11:31,425 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@66927b5e
+ 	 2020-09-10 12:11:31,453 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:11:31,453 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:11:31,453 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:11:31,454 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:11:32,232 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0xd295b88842180049
+ 	 2020-09-10 12:11:32,275 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:11:48,792 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:12:11,879 	 INFO 	 JobsProvisioner [main] 	 CallId: 2463784690  Duration: 7.3 minutes
+
+ 	 2020-09-10 12:12:11,880 	 INFO 	 JobsProvisioner [main] 	 CallId: 6249283690  Duration: 22.2 minutes
+
+ 	 2020-09-10 12:12:11,896 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:12:45,565 	 ERROR 	 App [main] 	 Application crashed. 
+Cause: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Failed to claim call, please try again shortly!}
+  (Session info: chrome=79.0.3945.130): Failed to claim call, please try again shortly!
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.NubLoX}, goog:chromeOptions: {debuggerAddress: localhost:42387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 32d5eef35a5abfa5049a086fef2df134
+*** Element info: {Using=css selector, value=div.disabled-sidebar div.primary-content-container.grey-background div.container-md div.row:nth-child(3) div.col div.card div.card-body > h1:nth-child(1)}
+ 	 2020-09-10 12:27:51,853 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:27:51,858 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:27:52,565 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:27:52,573 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:27:52,573 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:27:52,580 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6340e5f0
+ 	 2020-09-10 12:27:52,606 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:27:52,607 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:27:52,608 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:27:52,610 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:27:52,611 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:27:52,612 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:27:52,614 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:27:52,615 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:27:52,615 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:27:52,616 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:27:52,617 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:27:52,617 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:27:52,618 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:27:52,619 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:27:52,621 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:27:52,621 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:27:52,634 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:27:52,696 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:27:52,696 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:27:52,723 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:27:52,723 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:27:52,730 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:27:52,742 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:27:52,743 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:27:52,850 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:27:52,850 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:27:52,851 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:27:52,851 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:27:52,852 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:27:52,852 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:27:52,852 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:27:52,853 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:27:52,853 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:27:52,853 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:27:52,853 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:27:52,854 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:27:52,854 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:27:52,864 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:27:52,864 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:27:52,865 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:27:53,298 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 6607 (auto-detected)
+ 	 2020-09-10 12:27:53,301 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:27:53,301 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:27:53,302 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:27:53,303 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:27:53,304 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:27:53,367 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:27:53,367 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:27:53,368 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@66927b5e
+ 	 2020-09-10 12:27:53,394 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:27:53,394 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:27:53,394 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:27:53,395 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:27:54,198 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0x2392098c020b6154
+ 	 2020-09-10 12:27:54,221 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:29:03,253 	 ERROR 	 App [main] 	 Application crashed. 
+Cause: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.jqLcK3}, goog:chromeOptions: {debuggerAddress: localhost:38771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d91a6d7e8d03ec434a020ed2cee9d84b
+ 	 2020-09-10 12:29:23,826 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:29:23,833 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:29:24,641 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:29:24,648 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:29:24,649 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:29:24,655 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6340e5f0
+ 	 2020-09-10 12:29:24,679 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:29:24,679 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:29:24,681 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:29:24,682 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:29:24,683 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:29:24,685 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:29:24,686 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:29:24,686 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:29:24,687 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:29:24,687 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:29:24,687 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:29:24,688 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:29:24,689 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:29:24,689 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:29:24,692 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:29:24,692 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:29:24,711 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:29:24,777 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:29:24,778 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:29:24,805 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:29:24,805 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:29:24,816 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:29:24,833 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:29:24,833 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:29:25,024 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:29:25,025 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:29:25,025 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:29:25,025 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:29:25,026 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:29:25,026 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:29:25,026 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:29:25,026 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:29:25,027 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:29:25,027 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:29:25,027 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:29:25,027 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:29:25,028 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:29:25,039 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:29:25,039 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:29:25,040 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:29:25,657 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 6889 (auto-detected)
+ 	 2020-09-10 12:29:25,660 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:29:25,660 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:29:25,662 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:29:25,662 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:29:25,664 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:29:25,730 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:29:25,731 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:29:25,732 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@61de0810
+ 	 2020-09-10 12:29:25,753 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:29:25,754 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:29:25,754 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:29:25,754 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:29:26,429 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0xf378505ca3c32119
+ 	 2020-09-10 12:29:26,450 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:29:50,695 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:29:50,699 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:29:51,467 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:29:51,472 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:29:51,472 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:29:51,477 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 12:29:51,502 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:29:51,502 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:29:51,504 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:29:51,505 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:29:51,506 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:29:51,507 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:29:51,508 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:29:51,508 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:29:51,508 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:29:51,509 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:29:51,509 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:29:51,510 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:29:51,511 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:29:51,511 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:29:51,513 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:29:51,514 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:29:51,526 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:29:51,577 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:29:51,577 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:29:51,603 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:29:51,604 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:29:51,613 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:29:51,626 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:29:51,626 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:29:51,747 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:29:51,747 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:29:51,748 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:29:51,748 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:29:51,748 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:29:51,748 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:29:51,748 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:29:51,749 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:29:51,749 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:29:51,749 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:29:51,749 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:29:51,750 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:29:51,750 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:29:51,761 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:29:51,761 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:29:51,761 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:29:52,202 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 7148 (auto-detected)
+ 	 2020-09-10 12:29:52,205 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:29:52,205 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:29:52,207 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:29:52,208 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:29:52,209 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:29:52,265 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:29:52,266 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:29:52,266 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@60ae3994
+ 	 2020-09-10 12:29:52,291 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:29:52,292 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:29:52,292 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:29:52,292 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:29:53,055 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0x9e0f2ae3ca63ca34
+ 	 2020-09-10 12:29:53,085 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:33:29,176 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:33:29,181 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:33:29,909 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:33:29,917 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:33:29,917 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:33:29,924 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 12:33:29,948 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:33:29,949 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:33:29,950 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:33:29,951 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:33:29,952 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:33:29,953 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:33:29,954 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:33:29,955 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:33:29,955 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:33:29,955 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:33:29,956 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:33:29,956 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:33:29,958 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:33:29,958 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:33:29,960 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:33:29,961 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:33:29,973 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:33:30,018 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:33:30,018 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:33:30,043 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:33:30,043 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:33:30,051 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:33:30,062 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:33:30,062 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:33:30,151 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:33:30,152 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:33:30,153 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:33:30,154 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:33:30,155 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:33:30,156 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:33:30,156 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:33:30,156 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:33:30,156 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:33:30,156 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:33:30,157 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:33:30,157 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:33:30,157 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:33:30,166 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:33:30,167 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:33:30,167 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:33:30,612 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 7557 (auto-detected)
+ 	 2020-09-10 12:33:30,615 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:33:30,615 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:33:30,616 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:33:30,617 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:33:30,618 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:33:30,671 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:33:30,671 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:33:30,672 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@28aa5d96
+ 	 2020-09-10 12:33:30,702 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:33:30,702 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:33:30,703 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:33:30,703 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:33:31,452 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0xc2ba239167d5c665
+ 	 2020-09-10 12:33:31,474 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:33:48,934 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:35:01,743 	 INFO 	 JobsProvisioner [main] 	 CallId: 6699684240  Duration: 4.2 minutes
+
+ 	 2020-09-10 12:35:01,744 	 INFO 	 JobsProvisioner [main] 	 CallId: 8346900416  Duration: 2.3 minutes
+
+ 	 2020-09-10 12:35:01,747 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:35:07,113 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:35:07,113 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:35:07,701 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:35:22,917 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:36:00,561 	 INFO 	 JobsProvisioner [main] 	 CallId: 4816637094  Duration: 26.8 minutes
+
+ 	 2020-09-10 12:36:00,561 	 INFO 	 JobsProvisioner [main] 	 CallId: 2954224056  Duration: 21.4 minutes
+
+ 	 2020-09-10 12:36:00,561 	 INFO 	 JobsProvisioner [main] 	 CallId: 9546623094  Duration: 6.1 minutes
+
+ 	 2020-09-10 12:36:00,562 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:36:05,403 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:36:05,404 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:36:06,246 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:36:28,214 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:37:02,745 	 INFO 	 JobsProvisioner [main] 	 CallId: 4393663604  Duration: 10.8 minutes
+
+ 	 2020-09-10 12:37:02,746 	 INFO 	 JobsProvisioner [main] 	 CallId: 2954224056  Duration: 21.4 minutes
+
+ 	 2020-09-10 12:37:02,746 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:37:08,925 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:37:08,926 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:37:09,823 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:37:39,204 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:38:03,065 	 INFO 	 JobsProvisioner [main] 	 CallId: 3246906056  Duration: 3.4 minutes
+
+ 	 2020-09-10 12:38:03,066 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:38:06,299 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:38:06,299 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:38:06,869 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:38:21,363 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:48:27,633 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:48:27,647 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:48:28,385 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:48:28,392 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:48:28,393 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:48:28,400 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 12:48:28,423 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:48:28,424 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:48:28,427 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:48:28,428 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:48:28,429 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:48:28,429 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:48:28,431 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:48:28,431 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:48:28,431 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:48:28,431 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:48:28,432 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:48:28,432 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:48:28,433 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:48:28,434 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:48:28,436 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:48:28,436 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:48:28,447 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:48:28,493 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:48:28,493 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:48:28,513 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:48:28,514 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:48:28,521 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:48:28,529 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:48:28,530 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:48:28,622 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:48:28,622 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:48:28,623 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:48:28,623 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:48:28,623 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:48:28,623 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:48:28,624 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:48:28,624 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:48:28,624 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:48:28,624 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:48:28,625 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:48:28,625 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:48:28,625 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:48:28,637 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:48:28,637 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:48:28,637 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:48:29,116 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 8974 (auto-detected)
+ 	 2020-09-10 12:48:29,119 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:48:29,119 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:48:29,120 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:48:29,121 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:48:29,122 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:48:29,190 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:48:29,191 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:48:29,191 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@56046652
+ 	 2020-09-10 12:48:29,221 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:48:29,221 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:48:29,222 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:48:29,222 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:48:29,978 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0x12bf6230ac185def
+ 	 2020-09-10 12:48:29,997 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:48:45,181 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:51:00,992 	 INFO 	 JobsProvisioner [main] 	 CallId: 1033594966  Duration: 12.1 minutes
+
+ 	 2020-09-10 12:51:00,993 	 INFO 	 JobsProvisioner [main] 	 CallId: 5599044663  Duration: 15.8 minutes
+
+ 	 2020-09-10 12:51:00,995 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:51:09,361 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:51:09,362 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:51:10,085 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:51:27,997 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:53:01,976 	 INFO 	 JobsProvisioner [main] 	 CallId: 1033594966  Duration: 12.1 minutes
+
+ 	 2020-09-10 12:53:01,977 	 INFO 	 JobsProvisioner [main] 	 CallId: 2396636094  Duration: 7.1 minutes
+
+ 	 2020-09-10 12:53:01,978 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:53:02,023 	 ERROR 	 App [main] 	 Application crashed. 
+Cause: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@id, '-2396636094')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.0pXnim}, goog:chromeOptions: {debuggerAddress: localhost:46675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8faa4c0912bae746262e8002a39bb269
+*** Element info: {Using=xpath, value=//a[contains(@id, '-2396636094')]}
+ 	 2020-09-10 12:54:42,759 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:54:42,764 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:54:43,548 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 12:54:43,556 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 12:54:43,556 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 12:54:43,563 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 12:54:43,582 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 12:54:43,582 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 12:54:43,584 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 12:54:43,585 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 12:54:43,586 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 12:54:43,587 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 12:54:43,588 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 12:54:43,588 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 12:54:43,589 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 12:54:43,589 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 12:54:43,589 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 12:54:43,590 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 12:54:43,591 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 12:54:43,591 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 12:54:43,593 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 12:54:43,594 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 12:54:43,605 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 12:54:43,647 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 12:54:43,647 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 12:54:43,664 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 12:54:43,664 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 12:54:43,671 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 12:54:43,679 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 12:54:43,679 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 12:54:43,742 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 12:54:43,742 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 12:54:43,742 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 12:54:43,743 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 12:54:43,743 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 12:54:43,743 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 12:54:43,743 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 12:54:43,743 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 12:54:43,743 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 12:54:43,744 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 12:54:43,744 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 12:54:43,744 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 12:54:43,744 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 12:54:43,753 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 12:54:43,753 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 12:54:43,754 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 12:54:44,100 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 9524 (auto-detected)
+ 	 2020-09-10 12:54:44,102 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 12:54:44,102 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 12:54:44,103 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 12:54:44,104 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 12:54:44,105 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 12:54:44,156 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 12:54:44,157 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 12:54:44,157 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@66927b5e
+ 	 2020-09-10 12:54:44,183 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 12:54:44,184 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 12:54:44,184 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 12:54:44,184 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 12:54:44,921 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0xf6ec9d049b256419
+ 	 2020-09-10 12:54:44,948 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:54:59,030 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:55:01,923 	 INFO 	 JobsProvisioner [main] 	 CallId: 6920066544  Duration: 4.2 minutes
+
+ 	 2020-09-10 12:55:01,926 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 12:55:05,616 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 12:55:05,616 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 12:55:06,434 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 12:55:21,907 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 12:57:15,418 	 ERROR 	 App [main] 	 Application crashed. 
+Cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.ts7PBO}, goog:chromeOptions: {debuggerAddress: localhost:33239}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 730f08d438c3562554474597c22a2bd6
+*** Element info: {Using=xpath, value=//table[@class='table table-bordered']}
+ 	 2020-09-10 13:28:32,913 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 13:28:32,917 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 13:28:33,619 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 13:28:33,625 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 13:28:33,626 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 13:28:33,638 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 13:28:33,662 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 13:28:33,662 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 13:28:33,663 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 13:28:33,665 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 13:28:33,665 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 13:28:33,666 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 13:28:33,668 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 13:28:33,668 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 13:28:33,668 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 13:28:33,669 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 13:28:33,669 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 13:28:33,669 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 13:28:33,670 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 13:28:33,670 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 13:28:33,672 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 13:28:33,672 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 13:28:33,683 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 13:28:33,735 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 13:28:33,736 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 13:28:33,761 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 13:28:33,761 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 13:28:33,772 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 13:28:33,784 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 13:28:33,784 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 13:28:33,902 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 13:28:33,903 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 13:28:33,903 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 13:28:33,904 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 13:28:33,904 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 13:28:33,905 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 13:28:33,905 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 13:28:33,905 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 13:28:33,906 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 13:28:33,906 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 13:28:33,907 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 13:28:33,908 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 13:28:33,908 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 13:28:33,922 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 13:28:33,922 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 13:28:33,923 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 13:28:34,333 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 11525 (auto-detected)
+ 	 2020-09-10 13:28:34,335 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 13:28:34,336 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 13:28:34,337 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 13:28:34,338 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 13:28:34,339 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 13:28:34,400 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 13:28:34,401 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 13:28:34,401 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@60ae3994
+ 	 2020-09-10 13:28:34,435 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 13:28:34,435 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 13:28:34,436 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 13:28:34,436 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 13:28:35,115 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0xbf14237e25a73bdd
+ 	 2020-09-10 13:28:35,144 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 13:28:57,773 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 13:29:03,867 	 INFO 	 JobsProvisioner [main] 	 CallId: 486638094  Duration: 7.0 minutes
+
+ 	 2020-09-10 13:29:03,869 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 13:29:03,889 	 ERROR 	 App [main] 	 Application crashed. 
+Cause: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@id, '-486638094')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.P0kDqG}, goog:chromeOptions: {debuggerAddress: localhost:38905}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4a764b9a3a328f0219fdc4d897c4656c
+*** Element info: {Using=xpath, value=//a[contains(@id, '-486638094')]}
+ 	 2020-09-10 13:33:55,793 	 DEBUG 	 App [main] 	 ----------------------------------------------Starting Qawjs............................................
+
+ 	 2020-09-10 13:33:55,798 	 DEBUG 	 App [main] 	 Instantiating web driver..............................................
+
+ 	 2020-09-10 13:33:56,536 	 DEBUG 	 InternalLoggerFactory [main] 	 Using Log4J2 as the default logging framework
+ 	 2020-09-10 13:33:56,543 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.level: simple
+ 	 2020-09-10 13:33:56,543 	 DEBUG 	 ResourceLeakDetector [main] 	 -Dio.netty.leakDetection.targetRecords: 4
+ 	 2020-09-10 13:33:56,550 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [main] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b45a2f5
+ 	 2020-09-10 13:33:56,577 	 DEBUG 	 PlatformDependent0 [main] 	 -Dio.netty.noUnsafe: false
+ 	 2020-09-10 13:33:56,577 	 DEBUG 	 PlatformDependent0 [main] 	 Java version: 8
+ 	 2020-09-10 13:33:56,579 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.theUnsafe: available
+ 	 2020-09-10 13:33:56,580 	 DEBUG 	 PlatformDependent0 [main] 	 sun.misc.Unsafe.copyMemory: available
+ 	 2020-09-10 13:33:56,581 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Buffer.address: available
+ 	 2020-09-10 13:33:56,583 	 DEBUG 	 PlatformDependent0 [main] 	 direct buffer constructor: available
+ 	 2020-09-10 13:33:56,585 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.Bits.unaligned: available, true
+ 	 2020-09-10 13:33:56,585 	 DEBUG 	 PlatformDependent0 [main] 	 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+ 	 2020-09-10 13:33:56,586 	 DEBUG 	 PlatformDependent0 [main] 	 java.nio.DirectByteBuffer.<init>(long, int): available
+ 	 2020-09-10 13:33:56,587 	 DEBUG 	 PlatformDependent [main] 	 sun.misc.Unsafe: available
+ 	 2020-09-10 13:33:56,588 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+ 	 2020-09-10 13:33:56,588 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 	 2020-09-10 13:33:56,590 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.maxDirectMemory: 1832910848 bytes
+ 	 2020-09-10 13:33:56,591 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 	 2020-09-10 13:33:56,593 	 DEBUG 	 CleanerJava6 [main] 	 java.nio.ByteBuffer.cleaner(): available
+ 	 2020-09-10 13:33:56,594 	 DEBUG 	 PlatformDependent [main] 	 -Dio.netty.noPreferDirect: false
+ 	 2020-09-10 13:33:56,608 	 DEBUG 	 PlatformDependent$Mpsc [main] 	 org.jctools-core.MpscChunkedArrayQueue: available
+ 	 2020-09-10 13:33:56,657 	 DEBUG 	 JdkSslContext [main] 	 Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 	 2020-09-10 13:33:56,657 	 DEBUG 	 JdkSslContext [main] 	 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+ 	 2020-09-10 13:33:56,683 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 	 2020-09-10 13:33:56,683 	 DEBUG 	 InternalThreadLocalMap [main] 	 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 	 2020-09-10 13:33:56,692 	 DEBUG 	 MultithreadEventLoopGroup [main] 	 -Dio.netty.eventLoopThreads: 8
+ 	 2020-09-10 13:33:56,703 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.noKeySetOptimization: false
+ 	 2020-09-10 13:33:56,703 	 DEBUG 	 NioEventLoop [main] 	 -Dio.netty.selectorAutoRebuildThreshold: 512
+ 	 2020-09-10 13:33:56,805 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numHeapArenas: 8
+ 	 2020-09-10 13:33:56,806 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.numDirectArenas: 8
+ 	 2020-09-10 13:33:56,806 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.pageSize: 8192
+ 	 2020-09-10 13:33:56,806 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxOrder: 11
+ 	 2020-09-10 13:33:56,807 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.chunkSize: 16777216
+ 	 2020-09-10 13:33:56,807 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.tinyCacheSize: 512
+ 	 2020-09-10 13:33:56,807 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.smallCacheSize: 256
+ 	 2020-09-10 13:33:56,807 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.normalCacheSize: 64
+ 	 2020-09-10 13:33:56,808 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 	 2020-09-10 13:33:56,809 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimInterval: 8192
+ 	 2020-09-10 13:33:56,809 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 	 2020-09-10 13:33:56,810 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.useCacheForAllThreads: true
+ 	 2020-09-10 13:33:56,810 	 DEBUG 	 PooledByteBufAllocator [main] 	 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 	 2020-09-10 13:33:56,823 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.allocator.type: pooled
+ 	 2020-09-10 13:33:56,823 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.threadLocalDirectBufferSize: 0
+ 	 2020-09-10 13:33:56,823 	 DEBUG 	 ByteBufUtil [main] 	 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 	 2020-09-10 13:33:57,278 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.processId: 11881 (auto-detected)
+ 	 2020-09-10 13:33:57,282 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv4Stack: false
+ 	 2020-09-10 13:33:57,282 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 -Djava.net.preferIPv6Addresses: false
+ 	 2020-09-10 13:33:57,284 	 DEBUG 	 NetUtil [Forwarding newSession on session null to remote] 	 Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+ 	 2020-09-10 13:33:57,285 	 DEBUG 	 NetUtil$1 [Forwarding newSession on session null to remote] 	 /proc/sys/net/core/somaxconn: 128
+ 	 2020-09-10 13:33:57,286 	 DEBUG 	 DefaultChannelId [Forwarding newSession on session null to remote] 	 -Dio.netty.machineId: 74:40:bb:ff:fe:a6:21:63 (auto-detected)
+ 	 2020-09-10 13:33:57,352 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkAccessible: true
+ 	 2020-09-10 13:33:57,353 	 DEBUG 	 AbstractByteBuf [AsyncHttpClient-3-1] 	 -Dio.netty.buffer.checkBounds: true
+ 	 2020-09-10 13:33:57,353 	 DEBUG 	 ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [AsyncHttpClient-3-1] 	 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@60ae3994
+ 	 2020-09-10 13:33:57,377 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 	 2020-09-10 13:33:57,378 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 	 2020-09-10 13:33:57,378 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.linkCapacity: 16
+ 	 2020-09-10 13:33:57,378 	 DEBUG 	 Recycler [AsyncHttpClient-3-1] 	 -Dio.netty.recycler.ratio: 8
+ 	 2020-09-10 13:33:58,167 	 DEBUG 	 ThreadLocalRandom [main] 	 -Dio.netty.initialSeedUniquifier: 0xf6143cbb9c34ecee
+ 	 2020-09-10 13:33:58,187 	 DEBUG 	 App [main] 	 Injecting session cookies...............................................................
+
+ 	 2020-09-10 13:34:17,713 	 DEBUG 	 App [main] 	 Monitoring job site homepage for jobs.....................................
+ 	 2020-09-10 13:37:01,835 	 INFO 	 JobsProvisioner [main] 	 CallId: 1013894866  Duration: 3.4 minutes
+
+ 	 2020-09-10 13:37:01,837 	 INFO 	 JobsProvisioner [main] 	 CallId: 6499036107  Duration: 2.3 minutes
+
+ 	 2020-09-10 13:37:01,841 	 DEBUG 	 App [main] 	 Jobs found. Picking jobs with Job picker.............
+ 	 2020-09-10 13:37:01,992 	 DEBUG 	 JobPicker [main] 	 The element is no more on page
+ 	 2020-09-10 13:37:11,101 	 ERROR 	 App [main] 	 Application crashed. 
+Cause: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.disabled-sidebar div.primary-content-container.grey-background div.container-md div.row:nth-child(3) div.col div.card div.card-body > h1:nth-child(1)"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.R1YJI9}, goog:chromeOptions: {debuggerAddress: localhost:43047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 48a278d902f94711180551f92aba7fe4
+*** Element info: {Using=css selector, value=div.disabled-sidebar div.primary-content-container.grey-background div.container-md div.row:nth-child(3) div.col div.card div.card-body > h1:nth-child(1)}
  	 

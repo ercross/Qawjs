@@ -26,43 +26,43 @@ public class App {
     public static void main( String[] args ) throws FileNotFoundException {
         List<Job> sortedJobs;
 
-        while (true) {
-            try {
-                log.debug("----------------------------------------------Starting Qawjs............................................\n");
-                log.debug("Instantiating web driver..............................................\n");
-                WebDriver jobsProvisionerDriver = new App().initWebDriver();
+        try {
+               while (true) {
+                   log.debug("----------------------------------------------Starting Qawjs............................................\n");
+                   log.debug("Instantiating web driver..............................................\n");
+                   WebDriver jobsProvisionerDriver = new App().initWebDriver();
 
-                log.debug("Injecting session cookies...............................................................\n");
-                jobsProvisionerDriver.get("https://app.qa-world.com");
-                jobsProvisionerDriver.manage().addCookie(App.getSessionCookie());
-                final JobsProvisioner jobsProvisioner = new JobsProvisioner(jobsProvisionerDriver);
+                   log.debug("Injecting session cookies...............................................................\n");
+                   jobsProvisionerDriver.get("https://app.qa-world.com");
+                   jobsProvisionerDriver.manage().addCookie(App.getSessionCookie());
+                   final JobsProvisioner jobsProvisioner = new JobsProvisioner(jobsProvisionerDriver);
 
-                jobsProvisionerDriver.get("https://app.qa-world.com/calls");
-                log.debug("Monitoring job site homepage for jobs.....................................");
-                sortedJobs = jobsProvisioner.provisionJobs();
+                   jobsProvisionerDriver.get("https://app.qa-world.com/calls");
+                   log.debug("Monitoring job site homepage for jobs.....................................");
+                   sortedJobs = jobsProvisioner.provisionJobs();
 
-                log.debug("Jobs found. Picking jobs with Job picker.............");
-                jobsProvisionerDriver = jobsProvisioner.driver; //to ensure the same driver instance is used throughout this iteration
-                JobPicker jobPicker = new JobPicker(jobsProvisionerDriver, sortedJobs);
-                jobPicker.pickAvailableJobs();
-                jobsProvisionerDriver = jobPicker.driver; //to ensure the same driver instance is used throughout this iteration
-                if (isJobPickedSuccessfully(jobsProvisionerDriver)) {
-                    Notifier.notifyByEmail("tobins4u@gmail.com", "New QA job picked",
-                            "A new job has been picked for you on QA-World. Kindly visit to check");
-                }
-                jobsProvisionerDriver.quit();
-            } catch (Exception e) {
-                log.error("Application crashed" + e);
+                   log.debug("Jobs found. Picking jobs with Job picker.............");
+                   jobsProvisionerDriver = jobsProvisioner.driver; //to ensure the same driver instance is used throughout this iteration
+                   JobPicker jobPicker = new JobPicker(jobsProvisionerDriver, sortedJobs);
+                   jobPicker.pickAvailableJobs();
+                   jobsProvisionerDriver = jobPicker.driver; //to ensure the same driver instance is used throughout this iteration
+                   if (isJobPickedSuccessfully(jobsProvisionerDriver)) {
+                       Notifier.notifyByEmail("tobins4u@gmail.com", "New QA job picked",
+                               "A new job has been picked for you on QA-World. Kindly visit to check");
+                   }
+                   jobsProvisionerDriver.quit();
             }
+        } catch (Exception e) {
+            log.error("Application crashed. \nCause: " + e);
         }
     }
 
     private static boolean isJobPickedSuccessfully(WebDriver driver) {
         driver.get("https://app.qa-world.com/calls");
-        if (driver.findElement(By.cssSelector("div.disabled-sidebar div.primary-content-container.grey-background div.container-md div.row:nth-child(3) div.col div.card div.card-body > h1:nth-child(1)")).isDisplayed())
-            return true;
-        log.info("No job picked yet");
-        return  false;
+        return driver.findElement(By.cssSelector("div.disabled-sidebar div.primary-content-container.grey-background div.container-md div.row:nth-child(3) div.col div.card div.card-body > h1:nth-child(1)"))
+                .isDisplayed();
+
+
     }
 
     private static Cookie getSessionCookie() throws FileNotFoundException {

@@ -1,9 +1,8 @@
 package com.ercross.qawjs;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.*;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,11 +18,17 @@ public class JobPicker {
         this.driver = driver;
     }
 
+    private static final Logger log = LogManager.getLogger(JobPicker.class);
+
     private void pickJobs() {
         for ( int i=sortedJobs.size(); i != 0; i--) {
-            driver.switchTo().newWindow(WindowType.TAB).get(sortedJobs.get(i-1).getCallUrl()); //opens each url in a new tab
-            //todo note down the @contains in my journal if it works
-            //driver.findElement(By.xpath("//tr[td[a[contains(@id,'" + sortedJobs.get(i-1).getCallId() +"')]]]")).sendKeys(Keys.CONTROL + "t");
+            try{
+                driver.findElement(By.xpath("//a[contains(@id, '-" + sortedJobs.get(i-1).getCallId() +"')]")).click();
+            } catch (UnhandledAlertException e) {
+                log.debug("Unhandled alert exception ignored");
+            } catch (NoSuchElementException e) { //catching this here because elements can disappear from page after being seen using findElement above
+                log.debug ("The element is no more on page");
+            }
         }
     }
 
