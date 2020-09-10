@@ -23,7 +23,7 @@ public class Notifier {
 
         Authenticator auth = new Authenticator() {
             public PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("tobins4u@gmail.com", "246829912002");
+                return new PasswordAuthentication("tobins4u@gmail.com", "password");
             }
         };
 
